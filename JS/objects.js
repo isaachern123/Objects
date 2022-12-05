@@ -35,7 +35,13 @@ const candy = {
 
     }
 }
-console.log(candy.owner.name);
+
+
+candy.favoriteToys = [
+    'tennis ball',
+    'stick'
+]
+
 
 
 const pets = [];
@@ -44,3 +50,36 @@ pets.push(candy);
 pets.unshift(dolly);
 
 console.log(pets[1]);
+
+
+console.log(pets[2].favoriteToys[1]);
+
+
+
+function doDogStuff(myPets) {
+    for (const petIndex in myPets) {
+        const pet = myPets[petIndex]
+        console.log(pet.favoriteToys)
+    }
+}
+
+
+rey.favoriteToys = ['rock'];
+doDogStuff(pets);
+
+
+rey.sit = function () {
+    console.log('rey sits');
+}
+rey.sit()
+
+
+function sit() {
+    console.log('the dog sits')
+}
+
+rey.sit = sit
+
+rey.sit()
+
+
