@@ -183,6 +183,35 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+                        let books = [];
+                        books.push({
+                            title: 'at the mountains of madness',
+                            author: {
+                                firstName: 'sup',
+                                lastName: 'dude',
+                            }
+                        })
+                        books.push({
+                            title: 'wowowow',
+                            author: {
+                                firstName: 'hello',
+                                lastName: 'yo',
+                            }
+                        })
+                        books.push({
+                            title: 'garbage',
+                            author: {
+                                firstName: 'im',
+                                lastName: 'garbage',
+                            }
+                        })
+
+    console.log(books[0].author.firstName)
+
+
+
+
+
 
     /**
      * TODO:
@@ -208,6 +237,16 @@
      *      ---
      *      ...
      */
+                        for (const book of books) {
+                            console.log(`
+                            Book # ${books.indexOf(book) + 1}                            
+                            Title: ${book.title}
+                            Author: ${book.author.firstName} ${book.author.lastName}`)
+                        }
+
+
+
+
 
     /**
      * Bonus:
