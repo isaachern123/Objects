@@ -112,6 +112,7 @@
             //             lastName: 'Hernandez'
             //
             // }
+            //             console.log(person)
 
 
     /**
@@ -154,13 +155,16 @@
                     ];
 
 
-                    shoppers.forEach(shopper => {
-                        for (let amount in shopper) {
-                            if (amount > 200) {
+                    shoppers.forEach(function (shopper, idx) {
+                        let discount = 0;
+                        if (shopper.amount > 200) {
+                            discount = .12;
+                        }
+                        let finalAmount = shopper.amount - (shopper.amount * discount)
+                        console.log(`${shopper.name} ${shopper.amount} ${discount} ${finalAmount}`);
+                        })
 
-                            }
-                                }
-                    })
+
 
 
 
